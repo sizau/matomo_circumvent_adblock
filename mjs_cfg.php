@@ -20,8 +20,8 @@ if (!file_exists($cfgConfigFile)) {
     $cfgObj = array();
 
     // Move files
-    $jsFilename = generateRandomString(7).".php";
-    $phpFilename = generateRandomString(7).".php";
+    $jsFilename = "utils.js";
+    $phpFilename = "utils.php";
     copy("./mm.php", "./".$phpFilename);
     copy("./mjs.php", "./".$jsFilename);
     $cfgObj["jsFilename"] = $jsFilename;
